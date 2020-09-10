@@ -14,7 +14,6 @@ const suggestionNames = document.querySelector(".suggestions");
 searchBar.addEventListener("keyup", (e) =>  {
     const element = e.target;
   const input = searchBar.value;
-  suggestionNames.innerHTML = "";
   const suggestions = members.filter(function (member) {
     return member.name.toLowerCase().startsWith(input);
   });
@@ -29,3 +28,15 @@ searchBar.addEventListener("keyup", (e) =>  {
         suggestionNames.innerHTML = "";
     }
 });
+
+
+
+// div.on('click', 'suggestions div' function() {
+
+//   searchBar.value.div.textContent;
+
+// };
+
+
+
+// assign a click event handler that sets the .value of the input to the name.

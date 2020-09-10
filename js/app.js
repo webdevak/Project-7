@@ -197,8 +197,6 @@ sendButton.addEventListener("click", (e) => {
   }
 });
 
-
-
 // When bell icon is clicked alert pops up notifying user
 bell.addEventListener("click", (e) => {
   const element = e.target;
@@ -227,17 +225,24 @@ list.addEventListener("click", (e) => {
   }
 });
 
-
 // --------Local storage ----------------------------------
 const storage = document.querySelector(".settings");
 
-storage.addEventListener('click', save) 
-    const save = () => {
-        localStorage.setItem('settingOptions', JSON.stringify(storage));
-        const storedInput = JSON.parse(localStorage.getItem('settingOptions'))
+// storage.addEventListener('click', save)
+//     const save = () => {
+//         localStorage.setItem('settingOptions', JSON.stringify(storage));
+//         const storedInput = JSON.parse(localStorage.getItem('settingOptions'))
 
-        if(storedInput) {
-            storage === storedInput
-        }
-    }
-  
+//         if(storedInput) {
+//             storage === storedInput
+//         }
+//     }
+
+storage.addEventListener("change", function () {
+  const save = localStorage.setItem("setting", JSON.stringify(storage));
+  const storedInput = JSON.parse(localStorage.getItem("settingOptions"));
+
+  if (storedInput) {
+    storage === storedInput;
+  }
+});

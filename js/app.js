@@ -226,23 +226,70 @@ list.addEventListener("click", (e) => {
 });
 
 // --------Local storage ----------------------------------
-const storage = document.querySelector(".settings");
 
-// storage.addEventListener('click', save)
-//     const save = () => {
-//         localStorage.setItem('settingOptions', JSON.stringify(storage));
-//         const storedInput = JSON.parse(localStorage.getItem('settingOptions'))
+// Variables for local storage
+const receive = document.getElementById('recieve');
+const not = document.getElementById('not');
+const public = document.getElementById('public');
+const nonPublic = document.getElementById('nonpublic');
+const timeZone = document.getElementById('mySelect');
 
-//         if(storedInput) {
-//             storage === storedInput
-//         }
-//     }
 
-storage.addEventListener("change", function () {
-  const save = localStorage.setItem("setting", JSON.stringify(storage));
-  const storedInput = JSON.parse(localStorage.getItem("settingOptions"));
-
-  if (storedInput) {
-    storage === storedInput;
-  }
+      // Click event listener for save button
+document.getElementById('save').addEventListener('click', function(){
+  // setItem for settings
+  localStorage.setItem('recieve', receive.checked = 'true');
+  localStorage.setItem('not', receive.unchecked = 'false');
+  localStorage.setItem('public', public.checked = 'true');
+  localStorage.setItem('nonpublic', public.checked = 'false');
+  localStorage.setItem('eastern', timeZone.selectedIndex = '1');
+ 
+   
+      if (receive.checked === true) {
+          localStorage.getItem(receive);
+      } else if (receive.checked === false) {
+        localStorage.getItem(not);
+      }
+    
+    alert('Settings successfully saved');
 });
+
+// Click event listener for cancel button
+document.getElementById('cancel').addEventListener('click', function(){
+  const cancel = confirm('Are you sure you want to cancel changes?');
+
+    if (cancel) {
+       // if canceled
+    localStorage.setItem('recieve', receive.checked = null);
+    localStorage.setItem('not', not.checked = null);
+    localStorage.setItem('public', public.checked = null);
+    localStorage.setItem('nonpublic', nonPublic.checked = null);
+    localStorage.setItem('timeZone', timeZone.selectedIndex = null);
+
+    }
+
+    const loadSettings = function() {
+      if (receive !== null) {
+        receive.checked = (receive === 'true');
+      }
+      if (not !== null) {
+        not.checked = (not === 'true')
+      }
+      if (public !== null) {
+        public.checked = (public === 'true')
+      }
+      if (nonPublic !== null) {
+        nonPublic.checked = (nonPublic === 'true')
+      }
+      if (timeZone !== null) {
+        timeZone.selectedIndex = (timeZone === 'true')
+      }
+
+    }
+
+});
+
+
+
+
+

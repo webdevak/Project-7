@@ -14,7 +14,7 @@
       <h1>Web Anaylitics</h1>
       <section class="parent">
         <div class="svg">
-          <div class="green-circle"></div> 
+          <div class="green-circle"></div>
           <?xml version="1.0" encoding="utf-8"?>
           <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
           <svg
@@ -50,7 +50,6 @@
       <img class="header-avatar" src="images/member-2.jpg" alt="member-2" />
       <h3>James Sullivan</h3>
     </header>
-    
 
     <div class="green-line"></div>
     <nav class="navigation">
@@ -365,23 +364,22 @@
 
         <form class="message-container">
           <div>
-          <input
-            type="text"
-            placeholder="Search for User..."
-            class="form-field"
-            id="input"
-            name="user"
-            list="member-list"
-          />
-          <!-- <div class="suggestions"></div> -->
-             <datalist id="member-list">
-               <option>James Sullivan</option>
-               <option>Victoria Chambers</option>
-               <option>Shannon Brown</option>
-               <option>Elliot Ali</option>
+            <input
+              type="text"
+              placeholder="Search for User..."
+              class="form-field"
+              id="input"
+              name="user"
+              list="member-list"
+            />
+            <!-- <div class="suggestions"></div> -->
+            <datalist id="member-list">
+              <option>James Sullivan</option>
+              <option>Victoria Chambers</option>
+              <option>Shannon Brown</option>
+              <option>Elliot Ali</option>
             </datalist>
-
-        </div>
+          </div>
           <textarea
             name="textarea"
             placeholder="Message for User"
@@ -405,8 +403,12 @@
               name="Switch"
             />
             <label class="switch-paddle" for="yes-no">
-              <span class="switch-active" aria-hidden="true">On</span>
-              <span class="switch-inactive" aria-hidden="true">Off</span>
+              <span id="recieve" class="switch-active" aria-hidden="true"
+                >On</span
+              >
+              <span id="not" class="switch-inactive" aria-hidden="true"
+                >Off</span
+              >
             </label>
           </div>
         </div>
@@ -421,12 +423,16 @@
               name="Switch"
             />
             <label class="switch-paddle" for="on-off">
-              <span class="switch-active" aria-hidden="true">On</span>
-              <span class="switch-inactive" aria-hidden="true">Off</span>
+              <span id="public" class="switch-active" aria-hidden="true"
+                >On</span
+              >
+              <span id="nonpublic" class="switch-inactive" aria-hidden="true"
+                >Off</span
+              >
             </label>
           </div>
         </div>
-        <select class="select" id="timezone">
+        <select id="mySelect" class="select" id="timezone">
           <option disabled selected>Select a Timezone</option>
           <option>Eastern</option>
           <option>Central</option>

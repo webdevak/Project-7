@@ -240,28 +240,21 @@ const timeZone = document.getElementById('mySelect');
       // Click event listener for save button
 document.getElementById('save').addEventListener('click', function(){
   // setItem for settings
+  // Set item to determine if checked or unchecked and saves to localStorage
   localStorage.setItem('receive', receive.checked );
-  // localStorage.setItem('notReceive', receive.unchecked );
-  localStorage.setItem('public', public.checked );
-  // localStorage.setItem('nonPublic', public.checked );
+   localStorage.setItem('public', public.checked );
+ // Determines which index is selected by the user and save the index to localStorage
   localStorage.setItem('timeZone', timeZone.selectedIndex);
  
-  // If recieve is checked to true local storage will save to on and it will be true
+  // If recieve is checked to true local storage return true
       if (receive.checked === true) {
           localStorage.getItem(receive);
       } 
- // If recieve is unchecked and equals false local storage will save to off and it will be false
-      // else if (receive.checked === false) {
-      //   localStorage.getItem(notReceive);
-      // } 
-// If 
+ // If public is checked and equals true local storage will return true
       else if (public.checked === true) {
         localStorage.getItem(public);
       } 
-      // else if (public.checked === false) {
-      //   localStorage.getItem(nonPublic);
-      // }
-
+  // Will notify user settings is successfully saved
     alert('Settings successfully saved');
 });
 
@@ -272,7 +265,7 @@ document.getElementById('cancel').addEventListener('click', function(){
   const cancel = confirm('Are you sure you want to cancel changes?');
 
     if (cancel) {
-       // if canceled
+       // if canceled LocalStorage will log null 
     localStorage.setItem('recieve', receive.checked = null);
     localStorage.setItem('not', not.checked = null);
     localStorage.setItem('public', public.checked = null);

@@ -240,29 +240,32 @@ const timeZone = document.getElementById('mySelect');
       // Click event listener for save button
 document.getElementById('save').addEventListener('click', function(){
   // setItem for settings
-  localStorage.setItem('receive', receive.checked = 'true');
-  localStorage.setItem('notReceive', receive.unchecked = 'false');
-  localStorage.setItem('public', public.checked = 'true');
-  localStorage.setItem('nonPublic', public.checked = 'false');
+  localStorage.setItem('receive', receive.checked );
+  // localStorage.setItem('notReceive', receive.unchecked );
+  localStorage.setItem('public', public.checked );
+  // localStorage.setItem('nonPublic', public.checked );
   localStorage.setItem('timeZone', timeZone.selectedIndex);
  
-  
-      if (receive.checked === false) {
-          localStorage.getItem(notReceive);
-      } else if (receive.checked === true) {
-        localStorage.getItem(receive);
-      } else if (public.checked === true) {
+  // If recieve is checked to true local storage will save to on and it will be true
+      if (receive.checked === true) {
+          localStorage.getItem(receive);
+      } 
+ // If recieve is unchecked and equals false local storage will save to off and it will be false
+      // else if (receive.checked === false) {
+      //   localStorage.getItem(notReceive);
+      // } 
+// If 
+      else if (public.checked === true) {
         localStorage.getItem(public);
-      } else if (public.checked === false) {
-        localStorage.getItem(nonPublic);
-      }
+      } 
+      // else if (public.checked === false) {
+      //   localStorage.getItem(nonPublic);
+      // }
 
-   
-    
     alert('Settings successfully saved');
 });
 
-console.log(document.getElementById('save'));
+
 
 // Click event listener for cancel button
 document.getElementById('cancel').addEventListener('click', function(){

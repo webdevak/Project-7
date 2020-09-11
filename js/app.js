@@ -229,17 +229,13 @@ list.addEventListener("click", (e) => {
 
 // Variables for local storage
 const receive = document.getElementById('yes-no');
-// const not = document.getElementById('yes-no');
 const public = document.getElementById('on-off');
-// const nonPublic = document.getElementById('on-off');
 const timeZone = document.getElementById('mySelect');
-
-
 
 
       // Click event listener for save button
 document.getElementById('save').addEventListener('click', function(){
-  // setItem for settings
+  // setItems for settings
   // Set item to determine if checked or unchecked and saves to localStorage
   localStorage.setItem('receive', receive.checked );
    localStorage.setItem('public', public.checked );
@@ -259,7 +255,6 @@ document.getElementById('save').addEventListener('click', function(){
 });
 
 
-
 // Click event listener for cancel button
 document.getElementById('cancel').addEventListener('click', function(){
   const cancel = confirm('Are you sure you want to cancel changes?');
@@ -267,27 +262,8 @@ document.getElementById('cancel').addEventListener('click', function(){
     if (cancel) {
        // if canceled LocalStorage will log null 
     localStorage.setItem('recieve', receive.checked = null);
-    localStorage.setItem('not', not.checked = null);
     localStorage.setItem('public', public.checked = null);
-    localStorage.setItem('nonpublic', nonPublic.checked = null);
     localStorage.setItem('timeZone', timeZone.selectedIndex = null);
-
-    }
-
-    const loadSettings = function() {
-      // If recieve does not equal null receive will equal true
-      if (receive !== null) {
-        receive.checked = (receive === 'true');
-      }
-    // If public does not equal null public will equal true
-      if (public !== null) {
-        public.checked = (public === 'true')
-      }
-    // If timezone does not equal null Timezone options selected will be true
-      if (timeZone !== null) {
-        timeZone.selectedIndex = (timeZone === 'true')
-      }
-
     }
 
 });

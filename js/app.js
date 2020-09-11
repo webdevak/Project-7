@@ -275,18 +275,15 @@ document.getElementById('cancel').addEventListener('click', function(){
     }
 
     const loadSettings = function() {
+      // If recieve does not equal null receive will equal true
       if (receive !== null) {
         receive.checked = (receive === 'true');
       }
-      if (not !== null) {
-        not.checked = (not === 'true')
-      }
+    // If public does not equal null public will equal true
       if (public !== null) {
         public.checked = (public === 'true')
       }
-      if (nonPublic !== null) {
-        nonPublic.checked = (nonPublic === 'true')
-      }
+    // If timezone does not equal null Timezone options selected will be true
       if (timeZone !== null) {
         timeZone.selectedIndex = (timeZone === 'true')
       }

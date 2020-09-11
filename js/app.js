@@ -228,31 +228,41 @@ list.addEventListener("click", (e) => {
 // --------Local storage ----------------------------------
 
 // Variables for local storage
-const receive = document.getElementById('recieve');
-const not = document.getElementById('not');
-const public = document.getElementById('public');
-const nonPublic = document.getElementById('nonpublic');
+const receive = document.getElementById('yes-no');
+// const not = document.getElementById('yes-no');
+const public = document.getElementById('on-off');
+// const nonPublic = document.getElementById('on-off');
 const timeZone = document.getElementById('mySelect');
+
+
 
 
       // Click event listener for save button
 document.getElementById('save').addEventListener('click', function(){
   // setItem for settings
-  localStorage.setItem('recieve', receive.checked = 'true');
-  localStorage.setItem('not', receive.unchecked = 'false');
+  localStorage.setItem('receive', receive.checked = 'true');
+  localStorage.setItem('notReceive', receive.unchecked = 'false');
   localStorage.setItem('public', public.checked = 'true');
-  localStorage.setItem('nonpublic', public.checked = 'false');
-  localStorage.setItem('eastern', timeZone.selectedIndex = '1');
+  localStorage.setItem('nonPublic', public.checked = 'false');
+  localStorage.setItem('timeZone', timeZone.selectedIndex);
  
-   
-      if (receive.checked === true) {
-          localStorage.getItem(receive);
-      } else if (receive.checked === false) {
-        localStorage.getItem(not);
+  
+      if (receive.checked === false) {
+          localStorage.getItem(notReceive);
+      } else if (receive.checked === true) {
+        localStorage.getItem(receive);
+      } else if (public.checked === true) {
+        localStorage.getItem(public);
+      } else if (public.checked === false) {
+        localStorage.getItem(nonPublic);
       }
+
+   
     
     alert('Settings successfully saved');
 });
+
+console.log(document.getElementById('save'));
 
 // Click event listener for cancel button
 document.getElementById('cancel').addEventListener('click', function(){

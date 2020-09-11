@@ -14,7 +14,8 @@ body {
   grid-template-areas:
     "header header"
     "navigation navigation"
-    "main main";
+    "main main"
+    "footer footer";
 }
 
 .header {
@@ -209,7 +210,6 @@ span {
   transition: background-color 0.3s ease-in;
   cursor: pointer;
   border: none;
-  background-color: none;
 }
 
 .traffic-nav-link:hover {
@@ -619,6 +619,10 @@ span {
   .recent-activity,
   .settings {
     grid-column: 2 / span 1;
+  }
+
+  footer {
+    grid-column: 1/ span 1;
   }
 
   .message-user,

@@ -26,9 +26,6 @@ const monthly = [
   2350,
 ];
 
-// Alert banner styling--------------------------
-alertBanner.style.backgroundColor = "#6A5ACD";
-alertBanner.style.color = "#ffffff";
 
 /* ------------ Data for traffic line chart -------------*/
 
@@ -174,6 +171,11 @@ alertBanner.innerHTML = `<div class="alert-banner"> <p><strong>Alert:</strong>
                          </div>`;
 const x = document.querySelector(".alert-banner-close");
 
+// Alert banner styling--------------------------
+alertBanner.style.backgroundColor = "#6A5ACD";
+alertBanner.style.color = "#ffffff";
+
+
 /* ------------ Click event listner for Alert -------------*/
 alertBanner.addEventListener("click", (e) => {
   const element = e.target;
@@ -197,14 +199,33 @@ sendButton.addEventListener("click", (e) => {
   }
 });
 
+// Drop down alert menu
+const alerts = document.querySelector('.wrapper');
+alerts.innerHTML = `<div class="alerts">
+                      <span  class="  comment">Alert! Response from Shannon.
+                      <span class="close-btn">X</span>
+                      </div>
+                       `;
+                     
+
 // When bell icon is clicked alert pops up notifying user
 bell.addEventListener("click", (e) => {
   const element = e.target;
-  alert("Alert! Response from Shannon");
-  alert("Alert! Respnse from Victoria");
+  alerts.style.display = 'block';
+  alert("Alert! Response from James.");
   // Green circle disappears after alerts have been viewed-----
   greenCircle.style.display = "none";
+ 
 });
+
+alerts.addEventListener('click', (e) => {
+ const element = e.target;
+  if (element.classList.contains("close-btn")) {
+    alerts.style.display = 'none';
+ }
+  
+})
+
 
 //--------- When clicked each traffic nav option changes color and background-----------
 const list = document.getElementsByTagName("ul")[0];
@@ -267,8 +288,5 @@ document.getElementById('cancel').addEventListener('click', function(){
     }
 
 });
-
-
-
 
 

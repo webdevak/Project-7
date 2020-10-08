@@ -107,7 +107,7 @@ let dailyUsersData = {
   datasets: [
     {
       data: [50, 100, 150, 200, 250, 300, 350],
-      backgroundColor: "#26628a",
+      backgroundColor: "#7477BF",
       borderWidth: 1,
     },
   ],
@@ -134,7 +134,7 @@ let dailyUsersChart = new Chart(dailyCanvas, {
   options: dailyUsersOptions,
 });
 
-/* ------------ Data for doughnut chart -------------*/
+/* ------------ Data for daily traffic bar chart -------------*/
 let mobileUserData = {
   labels: ["Phones", "Tablets", "Desktops"],
   datasets: [
@@ -142,7 +142,7 @@ let mobileUserData = {
       label: "# of Users",
       data: [2000, 550, 500],
       borderWidth: 0,
-      backgroundColor: ["#5c9eca", "#1f5e88", "#7477BF"],
+      backgroundColor: ["#7477BF", "#78CF82", "#51b6c8"],
     },
   ],
 };
@@ -172,7 +172,7 @@ alertBanner.innerHTML = `<div class="alert-banner"> <p><strong>Alert:</strong>
 const x = document.querySelector(".alert-banner-close");
 
 // Alert banner styling--------------------------
-alertBanner.style.backgroundColor = "#1f5e88";
+alertBanner.style.backgroundColor = "#6A5ACD";
 alertBanner.style.color = "#ffffff";
 
 

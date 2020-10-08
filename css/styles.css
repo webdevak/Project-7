@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: #fff;
   font-family: sans-serif;
 }
 
@@ -65,7 +65,7 @@ body {
 
 .header {
   grid-area: header;
-  background-color: #7b68ee;
+  background-color: #26628a;
   color: #ffffff;
   display: grid;
   grid-template-columns: 1fr repeat(2, 80px) 100px;
@@ -127,7 +127,7 @@ span {
 
 .parent {
   margin: auto -10px;
-  border-right: 1px solid #483d8b;
+  border-right: 1px solid #2b2458;
 }
 
 .header-avatar {
@@ -152,7 +152,7 @@ span {
 
 .navigation {
   grid-area: navigation;
-  background-color: #483d8b;
+  background-color: #173950;
   padding: 10px;
   cursor: pointer;
   width: 100%;
@@ -314,11 +314,11 @@ span {
   margin: 17px 43px 17px 0px;
   margin: 15px;
   border-radius: 50%;
-  background-color: #7b68ee;
+  background-color: #5c9eca;
 }
 
 .facebook {
-  background-color: #7b68ee;
+  background-color: #5c9eca;
   margin: 17px 43px 17px 0px;
   border-radius: 50%;
   margin-left: 9%;
@@ -493,7 +493,7 @@ span {
 
 .button-primary,
 .send {
-  background-color: #7b68ee;
+  background-color: #1f5e88;
   color: #ffffff;
 }
 
@@ -615,7 +615,7 @@ span {
     border-left: 1px solid grey;
     border-bottom: 1px solid grey;
     border-top: none;
-    background-color: lavender;
+    background-color: #173950;
   }
 
   .main-input {
@@ -789,6 +789,10 @@ span {
     padding-right: 0px;
   }
 
+  .navigation {
+    width: 57px;
+  }
+
   .main-header {
     display: flex;
     flex-direction: row;
@@ -803,8 +807,8 @@ span {
 
   .main-header-search {
     border-top: none;
-    width: 100%;
-    padding-right: 45em;
+    /* width: 100%; */
+    padding-right: 46em;
     margin-left: 4%;
   }
 
@@ -837,6 +841,7 @@ span {
   .social-stats {
     margin-top: 2%;
     margin-bottom: 0px;
+    margin-left: 2px;
   }
 
   .display {

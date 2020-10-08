@@ -3,9 +3,8 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: white;
   font-family: sans-serif;
-  overflow-x: hidden;
 }
 
 .grid-container {
@@ -66,7 +65,7 @@ body {
 
 .header {
   grid-area: header;
-  background-color: #26628a;
+  background-color: #7b68ee;
   color: #ffffff;
   display: grid;
   grid-template-columns: 1fr repeat(2, 80px) 100px;
@@ -128,7 +127,7 @@ span {
 
 .parent {
   margin: auto -10px;
-  border-right: 1px solid #2b2458;
+  border-right: 1px solid #483d8b;
 }
 
 .header-avatar {
@@ -153,7 +152,7 @@ span {
 
 .navigation {
   grid-area: navigation;
-  background-color: #173950;
+  background-color: #483d8b;
   padding: 10px;
   cursor: pointer;
   width: 100%;
@@ -315,11 +314,11 @@ span {
   margin: 17px 43px 17px 0px;
   margin: 15px;
   border-radius: 50%;
-  background-color: #5c9eca;
+  background-color: #7b68ee;
 }
 
 .facebook {
-  background-color: #5c9eca;
+  background-color: #7b68ee;
   margin: 17px 43px 17px 0px;
   border-radius: 50%;
   margin-left: 9%;
@@ -494,7 +493,7 @@ span {
 
 .button-primary,
 .send {
-  background-color: #1f5e88;
+  background-color: #7b68ee;
   color: #ffffff;
 }
 
@@ -616,7 +615,7 @@ span {
     border-left: 1px solid grey;
     border-bottom: 1px solid grey;
     border-top: none;
-    background-color: #173950;
+    background-color: lavender;
   }
 
   .main-input {
@@ -796,11 +795,6 @@ span {
     color: grey;
     width: 70%;
   }
-
-  .navigation {
-    width: 57px;
-  }
-
   .alert {
     width: 97%;
     margin-left: 1%;
@@ -809,8 +803,8 @@ span {
 
   .main-header-search {
     border-top: none;
-    /* width: 100%; */
-    padding-right: 46em;
+    width: 100%;
+    padding-right: 45em;
     margin-left: 4%;
   }
 
@@ -843,7 +837,6 @@ span {
   .social-stats {
     margin-top: 2%;
     margin-bottom: 0px;
-    margin-left: 2px;
   }
 
   .display {

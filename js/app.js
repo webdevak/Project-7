@@ -187,6 +187,7 @@ alertBanner.addEventListener("click", (e) => {
 /* ------------ Click event listner for Send Button -------------*/
 sendButton.addEventListener("click", (e) => {
   const button = e.target;
+  e.preventDefault();
   // Making sure that user and message fields are filld out also notifying user message has been sent
   if (userInput.value === "" && messageArea.value === "") {
     alert("Both user and message fields must be filled out before sending");

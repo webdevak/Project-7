@@ -5,7 +5,6 @@
 body {
   background-color: #fff;
   font-family: sans-serif;
-  overflow-x: hidden;
 }
 
 .grid-container {
@@ -185,8 +184,10 @@ span {
 }
 
 .main-header {
+  margin-bottom: 3%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 20%;
   color: grey;
 }
 .alert {
@@ -206,12 +207,6 @@ span {
   cursor: pointer;
 }
 
-.main-header {
-  margin-bottom: 3%;
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-}
 
 .main-header h2 {
   font-size: 1.9em;
@@ -226,11 +221,9 @@ span {
   background-repeat: no-repeat;
   padding: 10px 2%;
   margin-left: 8%;
-  margin-top: 5%;
   margin-bottom: 5%;
   border-radius: 5px;
   border-color: lightgray;
-  width: 19em;
 }
 
 .traffic-header {
@@ -294,6 +287,7 @@ span {
   width: 61%;
   display: flex;
   border: 3px solid;
+  border-radius: 5px;
   margin: auto;
   margin-bottom: 20px;
   background-color: #f8f8ff;
@@ -315,11 +309,11 @@ span {
   margin: 17px 43px 17px 0px;
   margin: 15px;
   border-radius: 50%;
-  background-color: #5c9eca;
+  background-color: #1f5e88;
 }
 
 .facebook {
-  background-color: #5c9eca;
+  background-color: #1f5e88;
   margin: 17px 43px 17px 0px;
   border-radius: 50%;
   margin-left: 9%;
@@ -331,7 +325,7 @@ span {
 }
 
 .facebook-text {
-  margin-left: -20%;
+  margin-left: -21%;
 }
 
 .social-container {
@@ -339,7 +333,7 @@ span {
 }
 
 .social-text {
-  margin-left: -63%;
+  margin-left: -65%;
 }
 
 .name {
@@ -376,7 +370,8 @@ span {
 }
 
 .new-members .member {
-  margin-top: 5%;
+    margin-top: 30px;
+    margin-right: 16px;
 }
 
 .recent-activity .time {
@@ -600,31 +595,33 @@ span {
   .main-header {
     display: flex;
     flex-direction: row;
-    color: grey;
+    /* color: grey; */
+    
+    width: 100%;
   }
 
   .main-header h2 {
     font-size: 1.5em;
     border-bottom: none;
-    margin-left: 10%;
+    margin-right: 10px;
     padding-right: 0px;
   }
 
+  
   .main-header-search {
-    padding-right: 16.8em;
-    margin-left: 6%;
-    border-left: 1px solid grey;
-    border-bottom: 1px solid grey;
-    border-top: none;
+    width: 85%;
+    border-radius: 2px 0 0 15px;
+    text-align: right;
     background-color: #173950;
-  }
+    }
 
   .main-input {
-    padding: 5px 1%;
-    margin-left: 80%;
-    margin-bottom: 5%;
-    border-width: 2px;
-    /* width: 277px; */
+    padding: 10px 1%;
+    margin-top: 23px;
+    margin-right: 10px;
+    margin-bottom: 3%;
+    border-width: 2px; 
+    width: 50%;
   }
 
   .alert {
@@ -720,7 +717,7 @@ span {
   }
 
   .facebook-text {
-    margin-left: -10%;
+    margin-left: -21%;
   }
 
   .social-container {
@@ -786,39 +783,29 @@ span {
 
   .main-header h2 {
     font-size: 2em;
-    margin-left: 6%;
+    margin-left: 5%;
+    margin-right: 45px;
     padding-right: 0px;
-  }
-
-  .main-header {
-    display: flex;
-    flex-direction: row;
-    color: grey;
-    width: 70%;
   }
 
   .navigation {
     width: 57px;
   }
 
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    color: grey;
+    width: 100%;
+  }
   .alert {
     width: 97%;
     margin-left: 1%;
     border-radius: 5px;
-  }
-
-  .main-header-search {
-    border-top: none;
-    /* width: 100%; */
-    padding-right: 46em;
-    margin-left: 4%;
-  }
+  }  
 
   .main-input {
-    padding: 9px 1%;
-    margin-left: 9em;
-    margin-top: 1em;
-    width: 35em;
+    margin-right: 23px;
   }
 
   .traffic-nav {
@@ -851,8 +838,8 @@ span {
   }
 
   .facebook-svg {
-    margin-left: 13%;
-    margin-top: 23%;
+    margin-left: 20%;
+    margin-top: 26%;
   }
 
   .facebook {
@@ -872,6 +859,10 @@ span {
 
   .number {
     font-size: 2.5em;
+  }
+
+  .recent-activity .member {
+    margin-top: 12px;
   }
 
   .recent-activity,
@@ -903,15 +894,11 @@ span {
 
 @media (min-width: 1324px) {
   .main-header-search {
-    padding-right: 63em;
-  }
-
-  .main-input {
-    margin-left: 26em;
+    width: 100%;
   }
 
   .facebook-svg {
-    margin-left: 21%;
+    margin-left: 23%;
     margin-top: 20%;
   }
 

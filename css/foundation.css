@@ -4692,7 +4692,7 @@ html.is-reveal-open body {
     transition: all 0.25s ease-out;
     content: ''; }
   input:checked ~ .switch-paddle {
-    background: #7b68ee; }
+    background: #1f5e88; }
     input:checked ~ .switch-paddle::after {
       left: 2.25rem; }
   [data-whatinput='mouse'] input:focus ~ .switch-paddle {

@@ -1,0 +1,145 @@
+//==============================
+//              Social
+//==============================
+
+
+
+.social-stats {
+    margin-top: 10%;
+    @media (min-width: 1024px) {
+      margin-top: 2%;
+    margin-bottom: 0px;
+    margin-left: 2px;
+    }
+  }
+  
+  .display {
+    width: 61%;
+    display: flex;
+    border: 3px solid;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: #f8f8ff;
+    padding: 10px;
+    @media (min-width: 768px) {
+      display: flex;
+    width: 28%;
+    border: 1px solid;
+    margin: 17px;
+    background-color: #fff;
+    padding: 10px;
+    }
+    @media (min-width: 1024px) {
+      padding: 2px;
+    }
+  }
+  
+  .twitter path {
+    transform: scale(0.7);
+    transform-origin: 59% 88%;
+  }
+  
+  .google-plus path {
+    transform: scale(0.5);
+    transform-origin: 46% 59%;
+  }
+  
+  .social {
+    width: 25%;
+    margin: 17px 43px 17px 0px;
+    margin: 15px;
+    border-radius: 50%;
+    background-color: #1f5e88;
+    @media (min-width: 768px) {
+      width: 41%;
+      margin: 17px 43px 17px 0px;
+      margin: 8px;
+    }
+  }
+  
+  .facebook {
+    background-color: #1f5e88;
+    margin: 17px 43px 17px 0px;
+    border-radius: 50%;
+    margin-left: 9%;
+    @media (min-width: 768px) {
+      margin: 7px 37px 17px 0px;
+    margin-left: 1%;
+    width: 35%;
+    }
+    @media (min-width: 1024px) {
+      margin: 14px 37px 17px 0px;
+      margin-left: 2%;
+      width: 29%;
+      height: 77%;
+    }
+    @media (min-width: 1324px) {
+      margin: 14px 37px 17px 28px;
+      width: 30%;
+      height: 74%;
+      }
+  }
+  
+  .facebook-svg {
+    margin-left: -1%;
+    margin-top: 9%;
+    @media (min-width: 1024px) {
+      margin-left: 20%;
+      margin-top: 26%;
+    }
+    @media (min-width: 1324px) {
+      margin-left: 23%;
+      margin-top: 20%;
+      }
+  }
+  
+  .facebook-text {
+    margin-left: -21%;
+    @media (min-width: 768px) {
+      margin-left: -21%;
+    }
+    @media (min-width: 1024px) {
+      margin-left: -4%;
+    }
+  }
+  
+  .social-container {
+    width: 100%;
+    @media (min-width: 768px) {
+      grid-column: 1 / span 2;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+  }
+  
+  .social-text {
+    margin-left: -65%;
+    @media (min-width: 768px) {
+      margin-left: -52%;
+    }
+    @media (min-width: 1024px) {
+      margin-left: -45%;
+    }
+  }
+  
+  .name {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 17px 0px 0px 0px;
+  }
+  
+  .number {
+    font-size: 2.5em;
+    margin-top: 0px;
+    margin: auto;
+    @media (min-width: 768px) {
+      font-size: 2em;
+    margin-top: 0px;
+    margin: auto;
+    }
+    @media (min-width: 1024px) {
+      font-size: 2.5em;
+    }
+  }

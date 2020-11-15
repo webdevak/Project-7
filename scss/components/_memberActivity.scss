@@ -1,0 +1,93 @@
+
+//==============================
+//              Member Activity
+//==============================
+
+
+
+.recent-activity,
+.new-members {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  width: 80%;
+  margin: auto;
+  background-color: whitesmoke;
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.new-members {
+  @media (min-width: 768px) {
+    grid-column: 1 / span 1;
+    width: 100%;
+    margin: 0;
+  }
+  @media (min-width: 1024px) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.recent-activity {
+  @media (min-width: 768px) {
+    grid-column: 2 / span 1;
+    width: 100%;
+  }
+}
+
+.member-1,
+.member {
+  display: flex;
+  border-top: 1px solid;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.member-1 {
+  border-top: none;
+}
+
+.new-members .member {
+    margin-top: 30px;
+    margin-right: 16px;
+}
+
+.recent-activity .time {
+  margin-top: 0px;
+}
+
+.comment,
+.new-members p {
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: 11%;
+}
+
+.recent-activity .member-1 {
+  background-image: url(../images/_arrow-symbol.png);
+  background-repeat: no-repeat;
+  background-position: 96%;
+}
+
+.recent-activity .member {
+  margin-right: 2%;
+  margin-top: 3%;
+  background-image: url(../images/_arrow-symbol.png);
+  background-repeat: no-repeat;
+  background-position: 98%;
+  @media (min-width: 1024px) {
+    margin-top: 12px;
+  }
+}
+
+#recent-activity,
+.recent-activity-container,
+#new-members,
+.members-container {
+  @media (min-width: 768px) {
+    margin-left: 4%;
+  }
+}
+

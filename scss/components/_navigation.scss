@@ -1,0 +1,54 @@
+// ===========================================
+//                Navigation
+// ===========================================
+
+.navigation {
+    grid-area: navigation;
+    background-color: #173950;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    @media (min-width: 1024px) {
+      width: 57px;
+    }
+  }
+  
+  .green-line {
+    content: "";
+    position: absolute;
+    top: 16%;
+    right: 0;
+    bottom: 0;
+    left: 1%;
+    background-color: lightgreen;
+    border-radius: 4%;
+    height: 1%;
+    width: 8%;
+    @media (min-width: 768px) {
+      top: 15%;
+      right: 0;
+      bottom: 0;
+      left: 1px;
+      height: 14%;
+      width: 3px;
+    }
+    @media (min-width: 1024px) {
+      top: 14%;
+      right: 0;
+      bottom: 0;
+      left: 0%;
+      height: 13%;
+      width: 5px;
+    }
+  }
+  
+  .icons {
+    margin: 0 auto;
+    width: 5%;
+    margin-right: 2%;
+    @media (min-width: 768px) {
+      margin-top: 90%;
+      width: 100%;
+    }
+  }
+  

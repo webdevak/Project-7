@@ -1,0 +1,46 @@
+ // ===========================================
+//                Buttons
+// ==============================================
+
+
+.button-primary,
+.send {
+  background-color: #1f5e88;
+  color: #ffffff;
+}
+
+.button-disabled {
+  background-color: grey;
+  color: #ffffff;
+}
+
+.button-primary,
+  .button-disabled {
+    padding: 10px 15px;
+    width: 40%;
+    border-radius: 5px;
+  }
+
+  .settings-button {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .settings-button {
+    display: flex;
+    justify-content: space-around;
+  }
+
+.close-btn {
+    position: absolute;
+    left: 227px;
+    top: 5px;
+    cursor: pointer;
+    padding: 3px;
+  }
+  
+  .close-btn:hover {
+    background-color: rgb(255, 0, 85);
+    border-radius: 5px;
+    transform: scale(1.1);
+  }

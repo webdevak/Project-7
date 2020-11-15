@@ -1,0 +1,67 @@
+/* ============================================= */
+/*             Charts                   */
+/* ============================================= */
+
+
+.chart {
+  @media (min-width: 768px) {
+    width: 90vw;
+  }
+}
+
+#traffic-chart {
+    width: 95vw;
+  }
+  
+  .chart-container {
+    position: relative;
+    height: 40vh;
+    width: 100vw;
+    margin: auto 0;
+    @media (min-width: 768px) {
+      position: relative;
+      height: 50vh;
+      width: 87vw;
+      margin: auto 0;
+    }
+    @media (min-width: 1024px) {
+      position: relative;
+      height: 50vh;
+      width: 87vw;
+      margin: 0 auto;
+    }
+  }
+  
+  .mobile-users-chart,
+  .daily-users-graph {
+    border-bottom: 1px solid;
+    margin-left: 1%;
+  }
+
+  .daily-users-graph {
+    @media (min-width: 768px) {
+      grid-column: 1 / span 1;
+      border-right: 1px solid grey;
+      border-top: 1px solid grey;
+      border-bottom: 1px solid grey;
+    }
+  }
+
+  .mobile-users-chart {
+    @media (min-width: 768px) {
+      grid-column: 2 / span 1;
+      border-top: 1px solid grey;
+      border-bottom: 1px solid grey;
+    }
+  }
+  
+  .widget-container {
+    width: 90vw;
+    @media (min-width: 768px) {
+      width: 45vw;
+    }
+  }
+  
+  .social-stats {
+    margin-top: 10%;
+  }

@@ -1,0 +1,39 @@
+//==============================
+//              Mixins
+//==============================
+
+
+@mixin wrapper {
+    margin-top: 3%;
+    padding: 7px;
+    background-color: whitesmoke;
+    width: 248px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    right: 238px;
+    top: 24px;
+}
+
+// Media Queries breakpoint 768px
+@mixin mq($break) {
+    @if $break == 'med' {
+        @media (min-width: $break-med) {
+            @content;
+        }
+    }
+}
+
+
+
+// Media Queries breakpoint 768px
+// @mixin mq($break) {
+//     @if $break == 'large' {
+//         @media (min-width: $break-large) {
+//             @content;
+//         }
+//     }
+// }

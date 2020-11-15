@@ -1,0 +1,50 @@
+
+//==============================
+//              Settings
+//==============================
+
+
+#settings {
+    margin-left: 5%;
+  }
+  
+  .email-notifications {
+    display: flex;
+    margin-right: 16px;
+    justify-content: space-around;
+  }
+  
+  .profile-to-public {
+    display: flex;
+    margin-left: -2px;
+    justify-content: space-around;
+  }
+  
+  .settings {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 10%;
+    border: 1px solid;
+    background-color: whitesmoke;
+    @media (min-width: 768px) {
+      width: 100%;
+    }
+  }
+  
+  
+  .select {
+    padding: 10px 15px;
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: 4%;
+    margin-top: 5%;
+    border-width: 2px;
+    border-radius: 5px;
+  }
+  
+  
+  .settings p {
+    margin-bottom: 27px;
+    margin-top: 0px;
+  }

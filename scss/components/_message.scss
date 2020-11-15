@@ -1,0 +1,83 @@
+
+//==============================
+//              Message
+//==============================
+
+
+
+.message-title {
+    margin-left: 5%;
+  }
+  
+  .message-user {
+    border: 1px solid;
+    width: 80%;
+    background-color: whitesmoke;
+    margin: auto;
+    @media (min-width: 768px) {
+      grid-column: 1 / span 1;
+      border-right: 1px solid grey;
+      border-top: 1px solid grey;
+      border-bottom: 1px solid grey;
+      margin: 0;
+      width: 100%;
+    }
+    @media (min-width: 1024px) {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      width: 100%;
+    }
+  }
+  
+  .message-container {
+    width: 100%;
+  }
+  
+  .form-field {
+    margin: auto;
+    display: block;
+    padding: 10px 15px;
+    margin-top: 5%;
+    border-width: 2px;
+    border-radius: 5px;
+    width: 80%;
+  }
+  
+  #textarea {
+    margin-left: 10%;
+    display: block;
+    padding: 4% 1%;
+    margin-top: 5%;
+    border-width: 2px;
+    border-radius: 5px;
+    width: 80%;
+    @media (min-width: 768px) {
+      width: 81%;
+    padding: 8% 1%;
+    }
+    @media (min-width: 1024px) {
+      width: 80%;
+    padding: 8% 1%;
+    margin-top: 3%;
+    }
+    @media (min-width: 1324px) {
+      padding: 5% 1%;
+      }
+  }
+  
+  #send {
+    margin: auto;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 10%;
+    margin-top: 4%;
+    border-width: 2px;
+    border-radius: 5px;
+    width: 81%;
+    @media (min-width: 768px) {
+      margin-top: 9%;
+    }
+    @media (min-width: 1024px) {
+      margin-top: 26px;
+    }
+  }

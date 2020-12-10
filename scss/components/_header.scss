@@ -51,9 +51,12 @@
     color: #fff;
     font-size: 14px;
     position: absolute;
-    right: 238px;
+    right: 75px;
     top: 24px;
     display: none;
+    @media (min-width: 768px) {
+      right: 158px;
+    }
 }
 }
 

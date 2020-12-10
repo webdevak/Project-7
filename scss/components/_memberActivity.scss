@@ -56,6 +56,7 @@
 
 .recent-activity .time {
   margin-top: 0px;
+  padding: 5px;
 }
 
 .comment,
@@ -63,6 +64,7 @@
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: 11%;
+  padding: 5px;
 }
 
 .recent-activity .member-1 {
@@ -88,6 +90,7 @@
 .members-container {
   @media (min-width: 768px) {
     margin-left: 4%;
+    padding: 5px;
   }
 }
 
